@@ -7,6 +7,7 @@ html{
 body{
     margin: 0;
     padding: 0;
+    width: 100%;
     background: #ECE9E6;
     background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  
     background: linear-gradient(to right, #FFFFFF, #ECE9E6); 
@@ -14,9 +15,7 @@ body{
 
 header{
     margin: 0%;
-    padding: 1vh;
     width: 100%;
-    margin-bottom: 5vh;
     background: #283148;
     color: #ECE9E6;
     top: 0;
@@ -33,17 +32,12 @@ header{
 #logo{
     width: 40%;
     float: left;
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
 
 #logo i{
     float: left;
-    font-size: 5vw;
-}
-
-#logo h1{
-    width: 80%;
-    margin: auto;
+    font-size: 4vw;
 }
 
 nav{
@@ -63,6 +57,13 @@ ul li{
     width: 20%;
     float: left;
     position: relative;
+    text-align: center;
+    transition: all ease 500ms;
+}
+
+ul li:hover{
+    transition: all ease 500ms;
+    background: #171d2e;
 }
 
 li > a{
@@ -90,4 +91,54 @@ nav ul ul li{
 nav ul li:hover > ul {
     transition: all ease 2s;
     display:block;
+}
+
+aside{
+    width: 25%;
+    position: fixed;
+}
+
+.contenido{
+    margin: 0;
+    margin-left: 25%;
+    width: 65%;
+    padding-left: 5%;
+    padding-right: 5%;
+    opacity: 0.9;
+    border-radius: 5px;
+    color: #EEEEEE;
+}
+
+section{
+    padding: 3vw 5%;
+}
+
+#yo{
+    background: #26C281;
+}
+
+#temasInteres{
+    background: #3b539b;
+}
+
+#estudios{
+    background: #913535;
+}
+
+#hobbies{
+    background: #393e46;
+}
+
+#metas{
+    background: #bbbbbb;
+}
+
+h2{
+    margin-top: 0;
+    text-align: center;
+    font-size: 5vw;
+}
+
+a{
+    color: #00adb5;
 }
