@@ -23,10 +23,11 @@ header{
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
     transition: all ease 500ms;
     display: inline-flex;
-    line-height: 10vh;
+    line-height: 3vh;
     align-items: center;
     vertical-align: middle;
     z-index: 10;
+    user-select: none;
 }
 
 #logo{
@@ -59,6 +60,7 @@ ul li{
     position: relative;
     text-align: center;
     transition: all ease 500ms;
+    line-height: 10vh;
 }
 
 ul li:hover{
@@ -71,6 +73,7 @@ li > a{
     width: 100%;
     text-align: center;
     color: #ECE9E6;
+    font-size: 3vh;
 }
 
 nav ul ul{
@@ -80,6 +83,7 @@ nav ul ul{
     left:0;
     padding:0;
     background: #283148;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 nav ul ul li{
@@ -113,6 +117,16 @@ section{
     padding: 3vw 5%;
 }
 
+h3{
+    font-size: 2.5vw;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 2vw;
+    text-align: justify;
+}
+
 #yo{
     background: #26C281;
 }
@@ -130,7 +144,7 @@ section{
 }
 
 #metas{
-    background: #bbbbbb;
+    background: #f07b3f;
 }
 
 h2{
@@ -141,4 +155,138 @@ h2{
 
 a{
     color: #00adb5;
+}
+
+a:visited{
+    color: #f38181;
+}
+
+footer{
+    margin-top: 3vh;
+    width: 100%;
+    background: #393e46;
+    color: #ECE9E6;
+}
+
+.renglon{
+    width: 100%;
+    display: flex;
+}
+
+.columna{
+    width: 45%;
+    padding: 2.5%;
+    float: left;
+}
+
+.pie{
+    background: #222831;
+    width: 100%;
+    text-align: center;
+    font-size: 3vh;
+    line-height: 3.5vh;
+    vertical-align: middle;
+    margin-top: 1vh;
+}
+
+h5{
+    font-size: 4vh;
+}
+
+h6{
+    font-size: 3vh;
+}
+
+input{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.inputs{
+    font-size: 4vh;
+    margin-top: 2vh;
+}
+
+.inputs input{
+    background: none;
+    color: #ECE9E6;
+    border: none;
+    outline: none; 
+    border: solid 2px #00adb5;
+    border-radius: 5px;
+    transition: all ease 500ms;
+}
+
+.inputs input:hover{
+    box-shadow: 5px 5px 10px rgba(0,173,181, 0.4);
+    transition: all ease 500ms;
+}
+
+textarea{
+    width: 90%;
+    margin: auto;
+    resize: none;
+    background: none;
+    color: #ECE9E6; 
+    outline: none; 
+    border: solid 2px #00adb5;
+    border-radius: 5px;
+    transition: all ease 500ms;
+}
+
+textarea:hover{
+    box-shadow: 5px 5px 10px rgba(0,173,181, 0.4);
+    transition: all ease 500ms;
+}
+
+input[type="submit"]{
+    width: 50%;
+    margin-top: 2vh;
+    margin-left: 20%;  
+}
+
+
+
+@media screen and (max-width: 1024px){
+    ul li a{
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    aside{
+        display: none;
+    }
+
+    .contenido{
+        width: 100%;
+        padding: 0;
+        margin: 0px;
+    }
+
+    h1{
+        font-size: 2vw;
+    }
+
+    nav{
+        display: none;
+    }
+
+    logo{
+        width: 100%;
+    }
+
+    footer{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    nav{
+        display: none;
+    }
+    logo{
+        width: 100%;
+    }
 }

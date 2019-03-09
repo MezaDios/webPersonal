@@ -25,10 +25,10 @@
         <nav>
             <ul>
                 <li>
-                    <a class="noLinea" href="yo">¿Quién soy?</a>
+                    <a class="noLinea" href="#yo">¿Quién soy?</a>
                 </li>
                 <li>
-                    <a class="noLinea" href="#temasInteres">Temas de interes</a>
+                    <a class="noLinea" href="#temasInteres">Interes</a>
                     <!--Inicio de menú desplegable-->
                     <ul>
                         <li>
@@ -131,24 +131,24 @@
             <h2>Vida academica.</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia odio
-                 perspiciatis iure corporis quos accusantium optio. Accusantium non ullam 
-                 maxime iste illum provident, officia maiores magni doloribus repellat, quas vero.
+                perspiciatis iure corporis quos accusantium optio. Accusantium non ullam
+                maxime iste illum provident, officia maiores magni doloribus repellat, quas vero.
             </p>
         </section>
         <section id="hobbies">
             <h2>Hobbies</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima debitis
-                 illum non vel molestias vero magnam, culpa et facere. Corrupti animi sapiente 
-                 voluptate nihil vero illo perferendis molestiae! Amet, repudiandae!
+                illum non vel molestias vero magnam, culpa et facere. Corrupti animi sapiente
+                voluptate nihil vero illo perferendis molestiae! Amet, repudiandae!
             </p>
         </section>
         <section id="metas">
             <h2>Metas</h2>
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum eum officiis
-                 velit perspiciatis esse est voluptatum sequi quisquam atque iure, accusamus culpa 
-                 minima unde! Omnis minima perferendis accusamus exercitationem amet.
+                velit perspiciatis esse est voluptatum sequi quisquam atque iure, accusamus culpa
+                minima unde! Omnis minima perferendis accusamus exercitationem amet.
             </p>
         </section>
     </div>
@@ -157,17 +157,32 @@
     <footer>
         <div class="renglon">
             <div class="columna">
-                <h6>Contacto</h6>
-                <form action="preventDefault()">
-                    <input id="nombre" type="text" required>
-                    <label for="nombre">Nombre: </label>
-                    <input type="email" id="correo" required>
-                    <label for="correo">Correo electornico: </label>
-                    <input type="text" id="asunto">
-                    <label for="asunto">Asunto: </label>
-                    <textarea id="mensaje" cols="30" rows="10"></textarea>
-                    <label for="mensaje">Tu mensaje: </label>
-                    <input type="submit" value="Enviar">
+                <h5>Contacto</h5>
+                <form onsubmit="preventDefault()">
+
+                    <div class="inputs">
+                        <label for="nombre">Nombre: </label><br>
+                        <input id="nombre" type="text" required>
+                    </div>
+
+                    <div class="inputs">
+                        <label for="correo">Correo electornico: </label><br>
+                        <input type="email" id="correo" required>
+                    </div>
+
+                    <div class="inputs">
+                        <label for="asunto">Asunto: </label><br>
+                        <input type="text" id="asunto">
+                    </div>
+
+                    <div class="inputs">
+                        <label for="mensaje">Tu mensaje: </label><br>
+                        <textarea id="mensaje" cols="30" rows="10" required></textarea>
+                    </div>
+
+                    <div class="inputs">
+                        <input type="submit" value="Enviar">
+                    </div>
                 </form>
             </div>
             <div class="columna">
