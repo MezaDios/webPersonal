@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Web Personal</title>
+</head>
+
+<body>
+    <!--Inicio de la cabecera-->
+    <header>
+
+        <div id="logo">
+            <i class="material-icons">school</i>
+            <h1>Ismael Meza</h1>
+        </div>
+
+        <!--Inicio del menú-->
+        <nav>
+            <ul>
+                <li>
+                    <a href="yo">¿Quién soy?</a>
+                </li>
+                <li>
+                    <a class="noLinea" href="#temasInteres">Temas de interes</a>
+                    <!--Inicio de menú desplegable-->
+                    <ul>
+                        <li>
+                            <a class="noLinea" href="#IA">Inteligencia artificial</a>
+                        </li>
+                        <li>
+                            <a class="noLinea" href="#appWeb">Aplicaciones WEB</a>
+                        </li>
+                        <li>
+                            <a class="noLinea" href="#appCrit">Aplicaciones críticas</a>
+                        </li>
+                    </ul>
+                    <!--Fin del menú desplegable-->
+                </li>
+                <li>
+                    <a class="noLinea" href="#estudios">#Estudios</a>
+                </li>
+                <li>
+                    <a class="noLinea" href="#hobbies">Hobbies</a>
+                </li>
+                <li>
+                    <a class="noLinea" href="#metas">Metas</a>
+                </li>
+            </ul>
+            <!--Fin del menú-->
+        </nav>
+    </header>
+    <!--Fin de la cabecera-->
+
+    <!--Inicio barra lateral-->
+    <aside>
+        <div class="redSocial">
+            <a href="https://www.facebook.com/MezaDios" target="_blank">
+                <img src="" alt="">
+                Facebook: /MezaDios
+            </a>
+        </div>
+        <div class="redSocial">
+            <a href="https://twitter.com/MezaDios1" target="_blank">
+                <img src="" alt="">
+                Twitter: @MezaDios1
+            </a>
+        </div>
+        <div class="redSocial">
+            <a href="https://plus.google.com/u/0/107169794201766802661" target="_blank">
+                <img src="" alt="">
+                Google+
+            </a>
+        </div>
+        <div class="redSocial">
+            <span>
+                <i class="material-icons">mail</i>
+                Email: ismael_meza@ucol.mx
+            </span>
+        </div>
+    </aside>
+    <!--Fin barra lateral-->
+
+    <div class="contenido">
+        <section id="yo">
+            <h2>¿Quién soy?</h2>
+            <article>
+                <p>
+                    Bueno, mi nombre es Ismael Meza Rodríguez, tengo 19 años y soy estudiante
+                    de la faculta de telematica, en la ingenieria en software.<br>
+                </p>
+            </article>
+        </section>
+        <section id="temasInteres">
+            <h2>Temas de interes.</h2>
+            <article id="IA">
+                <h3>Inteligencia artificial</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Esse quaerat est error aperiam, cum debitis, pariatur eos vero
+                    nulla vel sunt aliquid sequi tempora, in at necessitatibus ipsum.
+                    Numquam, nesciunt!
+                </p>
+            </article>
+            <article id="appWeb">
+                <h3>Aplicaciones WEB</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Esse quaerat est error aperiam, cum debitis, pariatur eos vero
+                    nulla vel sunt aliquid sequi tempora, in at necessitatibus ipsum.
+                    Numquam, nesciunt!
+                </p>
+            </article>
+            <article id="appCrit">
+                <h3>Aplicaciones criticas</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Esse quaerat est error aperiam, cum debitis, pariatur eos vero
+                    nulla vel sunt aliquid sequi tempora, in at necessitatibus ipsum.
+                    Numquam, nesciunt!
+                </p>
+            </article>
+        </section>
+        <section id="estudios">
+            <h2>Vida academica.</h2>
+        </section>
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+        </section>
+        <section id="metas">
+            <h2>Metas</h2>
+        </section>
+    </div>
+
+    <!--Inicio pie de página-->
+    <footer>
+        <div class="renglon">
+            <div class="columna">
+                <h6>Contacto</h6>
+                <form action="preventDefault()">
+                    <input id="nombre" type="text" required>
+                    <label for="nombre">Nombre: </label>
+                    <input type="email" id="correo" required>
+                    <label for="correo">Correo electornico: </label>
+                    <input type="text" id="asunto">
+                    <label for="asunto">Asunto: </label>
+                    <textarea id="mensaje" cols="30" rows="10"></textarea>
+                    <label for="mensaje">Tu mensaje: </label>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+            <div class="columna">
+                <h6>Navegación</h6>
+                <a href="#yo">¿Quién soy?</a>
+                <a href="#temasInteres">Temas de interes</a>
+                <a href="#estudios">#Estudios</a>
+                <a href="#hobbies">Hobbies</a>
+                <a href="#metas">Metas</a>
+                <h6>Redes Sociales.</h6>
+                <a href="https://www.facebook.com/MezaDios" target="_blank">Facebook: /MezaDios</a>
+                <a href="https://twitter.com/MezaDios1" target="_blank">Twitter: @MezaDios1</a>
+                <a href="https://plus.google.com/u/0/107169794201766802661" target="_blank">Google+</a>
+                <h6>Contacto</h6>
+                <span>Correo electronico: ismael_meza@ucol.mx</span>
+                <span>Telefono: 3121210322</span>
+            </div>
+        </div>
+        <div class="pie">
+            Página creada por Ismael Meza Rodríguez.
+            Derechos reservados © 2019.
+        </div>
+    </footer>
+    <!--Fin pie de página-->
+
+</body>
+
+</html>
