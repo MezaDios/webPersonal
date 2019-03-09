@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+html{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #ECE9E6;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); 
+}
+
+header{
+    margin: 0%;
+    padding: 1vh;
+    width: 100%;
+    margin-bottom: 5vh;
+    background: #283148;
+    color: #ECE9E6;
+    top: 0;
+    position: sticky;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    transition: all ease 500ms;
+    display: inline-flex;
+    line-height: 10vh;
+    align-items: center;
+    vertical-align: middle;
+    z-index: 10;
+}
+
+#logo{
+    width: 40%;
+    float: left;
+    font-size: 3vw;
+}
+
+#logo i{
+    float: left;
+    font-size: 5vw;
+}
+
+#logo h1{
+    width: 80%;
+    margin: auto;
+}
+
+nav{
+    width: 60%;
+    float: left;
+}
+
+.noLinea{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    width: 20%;
+    float: left;
+    position: relative;
+}
+
+li > a{
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    color: #ECE9E6;
+}
+
+nav ul ul{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    padding:0;
+    background: #283148;
+}
+
+nav ul ul li{
+    float: none;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li:hover > ul {
+    transition: all ease 2s;
+    display:block;
+}
