@@ -98,8 +98,12 @@ nav ul li:hover > ul {
 }
 
 aside{
-    width: 25%;
+    width: 20%;
     position: fixed;
+    background: rgb(34, 27, 27);
+    z-index: 9;
+    height: 50vh;
+    padding: 25vh 2.5%;
 }
 
 .contenido{
@@ -163,7 +167,8 @@ a:visited{
 
 footer{
     margin-top: 3vh;
-    width: 100%;
+    margin-left: 25%;
+    width: 75%;
     background: #393e46;
     color: #ECE9E6;
 }
@@ -246,6 +251,9 @@ input[type="submit"]{
     margin-left: 20%;  
 }
 
+span{
+    color: #00adb5;
+}
 
 
 @media screen and (max-width: 1024px){
@@ -279,6 +287,7 @@ input[type="submit"]{
 
     footer{
         margin: 0;
+        width: 100%;
     }
 }
 
