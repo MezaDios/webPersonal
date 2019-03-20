@@ -14,7 +14,7 @@ body{
 }
 
 header{
-    margin: 0%;
+    margin: 0;
     width: 100%;
     background: #283148;
     color: #ECE9E6;
@@ -23,22 +23,22 @@ header{
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
     transition: all ease 500ms;
     display: inline-flex;
-    line-height: 3vh;
     align-items: center;
     vertical-align: middle;
     z-index: 10;
     user-select: none;
+    opacity: 0.98;
 }
 
 #logo{
     width: 40%;
     float: left;
-    font-size: 2.5vw;
+    font-size: 1vw;
 }
 
 #logo i{
     float: left;
-    font-size: 4vw;
+    font-size: 2.5vw;
 }
 
 nav{
@@ -50,17 +50,32 @@ nav{
     text-decoration: none;
 }
 
+nav{
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    float: right;
+    line-height: 12vh;
+}
+
+.noLinea{
+    text-decoration: none;
+}
+
 ul{
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 ul li{
+    margin: 0;
     width: 20%;
     float: left;
     position: relative;
     text-align: center;
     transition: all ease 500ms;
-    line-height: 10vh;
+    line-height: 11vh;
 }
 
 ul li:hover{
@@ -71,6 +86,7 @@ ul li:hover{
 li > a{
     text-transform: uppercase;
     width: 100%;
+    height: 100%;
     text-align: center;
     color: #ECE9E6;
     font-size: 3vh;
@@ -83,6 +99,7 @@ nav ul ul{
     left:0;
     padding:0;
     background: #283148;
+    width: 100%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
@@ -90,6 +107,7 @@ nav ul ul li{
     float: none;
     text-align: center;
     width: 100%;
+    line-height: 6vh;
 }
 
 nav ul li:hover > ul {
@@ -97,10 +115,14 @@ nav ul li:hover > ul {
     display:block;
 }
 
+a{
+    display: block;
+    color: #00adb5;
+}
+
 aside{
     width: 20%;
     position: fixed;
-    background: rgb(34, 27, 27);
     z-index: 9;
     height: 50vh;
     padding: 25vh 2.5%;
@@ -127,7 +149,7 @@ h3{
 }
 
 p{
-    font-size: 2vw;
+    font-size: 3vh;
     text-align: justify;
 }
 
@@ -175,7 +197,7 @@ footer{
 
 .renglon{
     width: 100%;
-    display: flex;
+    display: inline-flex;
 }
 
 .columna{
@@ -194,8 +216,9 @@ footer{
     margin-top: 1vh;
 }
 
-h5{
+h3{
     font-size: 4vh;
+    text-align: center;
 }
 
 h6{
@@ -255,6 +278,37 @@ span{
     color: #00adb5;
 }
 
+.mitad{
+    width: 44%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+img{
+    filter: grayscale(1);
+    transition: all ease 1s;
+}
+
+img:hover{
+    filter: none;
+    transition: all ease 1s;
+}
+
+#redes{
+    background: #EEEEEE;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    transition: all ease 1s;
+    width: 90%;
+    padding: 5%;
+}
+
+#redes:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+    transition: all ease 1s;
+}
 
 @media screen and (max-width: 1024px){
     ul li a{
@@ -267,14 +321,35 @@ span{
         display: none;
     }
 
+    header{
+        line-height: 8vw;
+    }
+
+    #logo > i{
+        font-size: 4vw;
+    }
+
+    #logo{
+        font-size: 2vw;
+    }
+
+    .renglon{
+        display: block;
+    }
+
+    .columna{
+        width: 95%;
+        float: none;
+    }
+
     .contenido{
         width: 100%;
         padding: 0;
         margin: 0px;
     }
 
-    h1{
-        font-size: 2vw;
+    h3{
+        font-size: 4vw;
     }
 
     nav{
@@ -298,4 +373,8 @@ span{
     logo{
         width: 100%;
     }
+    .columna{
+        width: 95%;
+    }
 }
+
